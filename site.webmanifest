@@ -1,0 +1,12 @@
+{
+  "name": "Amara Yoga Studio",
+  "short_name": "Amara",
+  "description": "Slow flow, breathwork, and restorative yoga every morning.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF5DD",
+  "theme_color": "#FBF5DD",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

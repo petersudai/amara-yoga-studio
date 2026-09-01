@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amara Yoga Studio — Find Your Quiet Center</title>
+<meta name="description" content="Amara is a boutique yoga studio for slow flow, breathwork, and restorative sessions every morning. Book a class and find your quiet center.">
+<meta name="theme-color" content="#FBF5DD">
+<link rel="canonical" href="https://amara-yoga-studio.vercel.app/">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Amara Yoga Studio">
+<meta property="og:title" content="Amara Yoga Studio — Find Your Quiet Center">
+<meta property="og:description" content="Slow flow, breathwork, and restorative sessions every morning in a converted daylight loft.">
+<meta property="og:url" content="https://amara-yoga-studio.vercel.app/">
+<meta property="og:image" content="https://amara-yoga-studio.vercel.app/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Amara Yoga Studio — Find Your Quiet Center">
+<meta name="twitter:description" content="Slow flow, breathwork, and restorative sessions every morning in a converted daylight loft.">
+<meta name="twitter:image" content="https://amara-yoga-studio.vercel.app/og.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+
+<script>var de=document.documentElement;de.classList.remove('no-js');de.classList.add('js');</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Amara Yoga Studio",
+  "description": "Boutique yoga studio for slow flow, breathwork, and restorative sessions.",
+  "url": "https://amara-yoga-studio.vercel.app/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "128 Linden Row, Studio 3"
+  },
+  "openingHours": "Mo-Su 05:45-20:00",
+  "priceRange": "$$"
+}
+</script>
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <svg class="loader-mark" viewBox="0 0 32 32" fill="none"><path d="M16 4C16 4 8 10 8 18C8 23.5 11.6 28 16 28C20.4 28 24 23.5 24 18C24 10 16 4 16 4Z" stroke="currentColor" stroke-width="1.3"/><path d="M16 28V14" stroke="currentColor" stroke-width="1.3"/></svg>
+  <span class="loader-count" id="loaderCount">0</span>
+</div>
+
+<!-- ============ CURSOR ============ -->
+<div class="cursor is-hidden" id="cursor" aria-hidden="true"><span class="cursor-label">Drag</span></div>
+<div class="cursor-dot is-hidden" id="cursorDot" aria-hidden="true"></div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+<!-- ============ GRAIN ============ -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav-mark" data-magnetic>
+    <svg viewBox="0 0 32 32" fill="none"><path d="M16 4C16 4 8 10 8 18C8 23.5 11.6 28 16 28C20.4 28 24 23.5 24 18C24 10 16 4 16 4Z" stroke="currentColor" stroke-width="1.3"/><path d="M16 28V14" stroke="currentColor" stroke-width="1.3"/></svg>
+    Amara
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#philosophy">Philosophy</a>
+    <a href="#classes">Classes</a>
+    <a href="#instructors">Teachers</a>
+    <a href="#membership">Membership</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <a href="#book" class="btn btn-solid nav-cta" data-magnetic>Book a class</a>
+  <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <a href="#philosophy">Philosophy</a>
+  <a href="#classes">Classes</a>
+  <a href="#instructors">Teachers</a>
+  <a href="#membership">Membership</a>
+  <a href="#visit">Visit</a>
+  <a href="#book" class="btn btn-solid" style="margin-top:20px;">Book a class</a>
+</div>
+
+<a id="top"></a>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-grain" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true" data-parallax="-0.12"></div>
+  <div class="wrap">
+    <div class="hero-content" id="heroContent">
+      <div class="hero-eyebrow">
+        <span class="dash"></span>
+        <span class="eyebrow">Studio &middot; Breath &middot; Movement</span>
+      </div>
+      <h1 class="hero-title" id="heroTitle">
+        <span class="line"><span class="i">Find your</span></span>
+        <span class="line"><span class="i"><em>quiet center</em></span></span>
+      </h1>
+      <p class="hero-sub u">Slow flow, breathwork, and restorative sessions every morning in a converted daylight loft. A space to arrive exactly as you are.</p>
+      <div class="hero-actions u">
+        <a href="#book" class="btn btn-solid" data-magnetic>Book a class</a>
+        <a href="#classes" class="btn btn-outline" data-magnetic>View schedule</a>
+      </div>
+      <div class="hero-proof u">
+        <div class="avatars" aria-hidden="true">
+          <span>M</span><span>R</span><span>S</span><span>K</span>
+        </div>
+        <p>Joined by 2,400+ students finding stillness this year</p>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-parallax="0.08">
+      <div class="breath-orb" aria-hidden="true">
+        <div class="breath-ring r1"></div>
+        <div class="breath-ring r2"></div>
+        <div class="breath-ring r3"></div>
+        <div class="breath-core">
+          <span class="breath-label" id="breathLabel">Inhale</span>
+        </div>
+        <span class="breath-caption">Breathe with us — 4 in · 2 hold · 4 out</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <span class="rail"></span>
+    Scroll
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Breathe</span><span>Move</span><span>Restore</span><span>Return</span><span>Arrive</span>
+    <span>Breathe</span><span>Move</span><span>Restore</span><span>Return</span><span>Arrive</span>
+  </div>
+</div>
+
+<!-- ============ SCHEDULE STRIP ============ -->
+<section class="schedule-strip">
+  <div class="wrap">
+    <div class="schedule-item">
+      <span class="time">6am</span>
+      <span class="label">Sunrise<br>Flow</span>
+    </div>
+    <div class="schedule-item">
+      <span class="time">12pm</span>
+      <span class="label">Midday<br>Reset</span>
+    </div>
+    <div class="schedule-item">
+      <span class="time">6pm</span>
+      <span class="label">Evening<br>Restore</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHILOSOPHY ============ -->
+<section class="section" id="philosophy">
+  <div class="wrap philosophy">
+    <div class="philosophy-art reveal photo-frame">
+      <span class="reveal-mask" aria-hidden="true"></span>
+      <div class="img-inner" data-parallax="0.06">
+        <img src="https://images.unsplash.com/photo-1761035190790-aa1a3472f7fc?w=900&q=80&fm=jpg&fit=crop&auto=format" alt="Sunlit yoga studio with students mid-practice" loading="lazy">
+      </div>
+    </div>
+    <div class="philosophy-copy reveal">
+      <span class="eyebrow">Our Philosophy</span>
+      <h2 style="margin-top:20px;">Movement is how the body remembers it's safe</h2>
+      <p>Amara began as a single sunrise class on a rented rooftop. Ten years on, the practice hasn't changed &mdash; we still start with breath, move at the pace of the body, and end in stillness. No mirrors, no performance. Just the work of arriving.</p>
+      <ul class="philosophy-list">
+        <li>
+          <svg class="mark" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9.5" stroke="#0D530E"/><path d="M7 11.5L9.5 14L15 8" stroke="#0D530E" stroke-width="1.3"/></svg>
+          <span>Small classes, capped at 14, so every alignment cue is personal</span>
+        </li>
+        <li>
+          <svg class="mark" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9.5" stroke="#0D530E"/><path d="M7 11.5L9.5 14L15 8" stroke="#0D530E" stroke-width="1.3"/></svg>
+          <span>Daylight studio built around natural light and silence</span>
+        </li>
+        <li>
+          <svg class="mark" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9.5" stroke="#0D530E"/><path d="M7 11.5L9.5 14L15 8" stroke="#0D530E" stroke-width="1.3"/></svg>
+          <span>Teachers trained in anatomy first, sequencing second</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLASSES  (horizontal pinned) ============ -->
+<section class="classes-h" id="classes">
+  <div class="hs-sticky">
+    <div class="hs-head reveal">
+      <span class="eyebrow">The Practice</span>
+      <h2>Five ways to move</h2>
+      <p>Every class is built around breath first. Choose by how you want to feel afterward, not just what you want to burn.</p>
+    </div>
+    <div class="hs-viewport">
+      <div class="hs-track" id="hsTrack" data-cursor-drag>
+        <article class="class-card">
+          <span class="num">01</span>
+          <div>
+            <h3>Vinyasa Flow</h3>
+            <p>Breath-linked movement that builds heat, strength, and a quiet mind through repetition.</p>
+            <span class="meta">60 min &middot; All levels</span>
+          </div>
+        </article>
+        <article class="class-card">
+          <span class="num">02</span>
+          <div>
+            <h3>Yin &amp; Stillness</h3>
+            <p>Long-held floor postures that soften connective tissue and settle the nervous system.</p>
+            <span class="meta">75 min &middot; All levels</span>
+          </div>
+        </article>
+        <article class="class-card">
+          <span class="num">03</span>
+          <div>
+            <h3>Restorative</h3>
+            <p>Fully supported poses with bolsters and blankets. The practice of doing nothing, well.</p>
+            <span class="meta">60 min &middot; All levels</span>
+          </div>
+        </article>
+        <article class="class-card">
+          <span class="num">04</span>
+          <div>
+            <h3>Prenatal</h3>
+            <p>Gentle strength and breathwork built around each trimester, taught by certified doulas.</p>
+            <span class="meta">50 min &middot; Prenatal</span>
+          </div>
+        </article>
+        <article class="class-card">
+          <span class="num">05</span>
+          <div>
+            <h3>Breathwork &amp; Sound</h3>
+            <p>Guided pranayama closing in a live singing-bowl sound bath. No mat work required.</p>
+            <span class="meta">45 min &middot; All levels</span>
+          </div>
+        </article>
+        <article class="class-card">
+          <span class="num">06</span>
+          <div>
+            <h3>Private Sessions</h3>
+            <p>One-to-one practice built around injury recovery, goals, or simply your own pace.</p>
+            <span class="meta">By appointment</span>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="hs-rail" aria-hidden="true">
+      <span class="count" id="hsCount">01</span>
+      <span class="track"><span id="hsProgress"></span></span>
+      <span class="count">06</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTRUCTORS ============ -->
+<section class="section" id="instructors">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our Teachers</span>
+      <h2>Guided by hands that know the body</h2>
+      <p>Every teacher at Amara completed 500+ hours of anatomy-based training before their first class.</p>
+    </div>
+    <div class="instructors-row reveal">
+      <div class="instructor-card">
+        <div class="instructor-photo photo-frame">
+          <img src="https://images.unsplash.com/photo-1547852356-b20668106c51?w=600&q=80&fm=jpg&fit=crop&auto=format" alt="Marisol Reyes in a seated yoga pose" loading="lazy">
+        </div>
+        <h4>Marisol Reyes</h4>
+        <p class="role">Founder &middot; Vinyasa</p>
+      </div>
+      <div class="instructor-card">
+        <div class="instructor-photo photo-frame">
+          <img src="https://images.unsplash.com/photo-1758599879607-df3c247332cd?w=600&q=80&fm=jpg&fit=crop&auto=format" alt="Kenji Okafor practicing yoga indoors" loading="lazy">
+        </div>
+        <h4>Kenji Okafor</h4>
+        <p class="role">Yin &amp; Restorative</p>
+      </div>
+      <div class="instructor-card">
+        <div class="instructor-photo photo-frame">
+          <img src="https://images.unsplash.com/photo-1671041191053-15dd8a7187c8?w=600&q=80&fm=jpg&fit=crop&auto=format" alt="Priya Nathan in a standing yoga pose" loading="lazy">
+        </div>
+        <h4>Priya Nathan</h4>
+        <p class="role">Prenatal</p>
+      </div>
+      <div class="instructor-card">
+        <div class="instructor-photo photo-frame">
+          <img src="https://images.unsplash.com/photo-1753019491766-a69f9d7da717?w=600&q=80&fm=jpg&fit=crop&auto=format" alt="Soren Lund seated in quiet meditation" loading="lazy">
+        </div>
+        <h4>Soren Lund</h4>
+        <p class="role">Breathwork &amp; Sound</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIAL (dark) ============ -->
+<section class="section section-dark" id="voices">
+  <div class="wrap">
+    <div class="testimonial reveal">
+      <svg class="divider-leaf" viewBox="0 0 32 32" fill="none"><path d="M16 4C16 4 8 10 8 18C8 23.5 11.6 28 16 28C20.4 28 24 23.5 24 18C24 10 16 4 16 4Z" stroke="currentColor" stroke-width="1.3"/></svg>
+      <blockquote id="quoteText" style="margin-top:34px;">"I came in tight from a decade at a desk. Six months later I can touch the floor without thinking about it &mdash; but the real change was learning to exhale on purpose."</blockquote>
+      <cite id="quoteCite">Dana Whitfield &middot; Member since 2023</cite>
+      <div class="testimonial-dots" id="quoteDots">
+        <button class="active" aria-label="Testimonial 1"></button>
+        <button aria-label="Testimonial 2"></button>
+        <button aria-label="Testimonial 3"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEMBERSHIP ============ -->
+<section class="section" id="membership">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Membership</span>
+      <h2>Practice on your terms</h2>
+      <p>No long-term contracts. Pause, downgrade, or cancel anytime from your account.</p>
+    </div>
+    <div class="plans-grid reveal">
+      <div class="plan-card">
+        <span class="plan-badge">Drop-in</span>
+        <h3>Single Class</h3>
+        <p class="plan-desc">Try Amara with no commitment</p>
+        <div class="plan-price">$32</div>
+        <ul class="plan-feat-list">
+          <li class="plan-feat"><svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#0D530E"/><path d="M6 9L8 11L12 6.5" stroke="#0D530E" stroke-width="1.3"/></svg>One class of your choice</li>
+          <li class="plan-feat"><svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#0D530E"/><path d="M6 9L8 11L12 6.5" stroke="#0D530E" stroke-width="1.3"/></svg>Mat &amp; props included</li>
+          <li class="plan-feat"><svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#0D530E"/><path d="M6 9L8 11L12 6.5" stroke="#0D530E" stroke-width="1.3"/></svg>Valid any time slot</li>
+        </ul>
+        <a href="#book" class="btn btn-outline" data-magnetic>Book a class</a>
+      </div>
+      <div class="plan-card featured">
+        <span class="plan-badge">Most chosen</span>
+        <h3>Unlimited Monthly</h3>
+        <p class="plan-desc">Full access, every studio ritual</p>
+        <div class="plan-price">$149<span> /mo</span></div>
+        <ul class="plan-feat-list">
+          <li class="plan-feat"><svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#0D530E"/><path d="M6 9L8 11L12 6.5" stroke="#0D530E" stroke-width="1.3"/></svg>Unlimited classes, all styles</li>
+          <li class="plan-feat"><svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#0D530E"/><path d="M6 9L8 11L12 6.5" stroke="#0D530E" stroke-width="1.3"/></svg>Priority booking, 7 days out</li>
+          <li class="plan-feat"><svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#0D530E"/><path d="M6 9L8 11L12 6.5" stroke="#0D530E" stroke-width="1.3"/></svg>One guest pass monthly</li>
+        </ul>
+        <a href="#book" class="btn btn-solid" style="background:var(--cream-light); color:var(--green-deep);" data-magnetic>Start membership</a>
+      </div>
+      <div class="plan-card">
+        <span class="plan-badge">10-Pack</span>
+        <h3>Class Pack</h3>
+        <p class="plan-desc">For the twice-a-week practice</p>
+        <div class="plan-price">$260</div>
+        <ul class="plan-feat-list">
+          <li class="plan-feat"><svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#0D530E"/><path d="M6 9L8 11L12 6.5" stroke="#0D530E" stroke-width="1.3"/></svg>10 classes, any style</li>
+          <li class="plan-feat"><svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#0D530E"/><path d="M6 9L8 11L12 6.5" stroke="#0D530E" stroke-width="1.3"/></svg>Valid for 6 months</li>
+          <li class="plan-feat"><svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#0D530E"/><path d="M6 9L8 11L12 6.5" stroke="#0D530E" stroke-width="1.3"/></svg>Shareable with one guest</li>
+        </ul>
+        <a href="#book" class="btn btn-outline" data-magnetic>Buy pack</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="cta-band" id="book">
+  <div class="wrap">
+    <span class="eyebrow reveal">Ready when you are</span>
+    <h2 class="reveal" style="margin-top:18px;">Your first class<br>is on us</h2>
+    <p class="reveal">New students practice free for one week. No card required.</p>
+    <div class="hero-actions reveal">
+      <a href="#visit" class="btn btn-solid" data-magnetic>Claim your free week</a>
+      <a href="#visit" class="btn btn-outline" data-magnetic>See today's schedule</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="visit">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 4C16 4 8 10 8 18C8 23.5 11.6 28 16 28C20.4 28 24 23.5 24 18C24 10 16 4 16 4Z" stroke="currentColor" stroke-width="1.3"/><path d="M16 28V14" stroke="currentColor" stroke-width="1.3"/></svg>
+          Amara
+        </div>
+        <p class="footer-note">128 Linden Row, Studio 3<br>Open daily, 5:45am &ndash; 8pm</p>
+      </div>
+      <div>
+        <h5>Studio</h5>
+        <ul>
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#instructors">Teachers</a></li>
+          <li><a href="#membership">Membership</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Stay in the loop</h5>
+        <p style="font-size:14.5px; color:rgba(251,245,221,0.65); margin-bottom:18px;">One quiet email a month. New classes, workshops, teacher notes.</p>
+        <form class="footer-form" id="newsForm">
+          <input type="email" placeholder="Your email" required aria-label="Email address">
+          <button type="submit" aria-label="Subscribe">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.4"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Amara Yoga Studio. All rights reserved.</span>
+      <span>Privacy &middot; Terms</span>
+    </div>
+  </div>
+  <div class="footer-wordmark" aria-hidden="true">Amara</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

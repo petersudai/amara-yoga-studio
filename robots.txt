@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amara-yoga-studio.vercel.app/sitemap.xml

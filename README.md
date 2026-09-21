@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/hero.png" alt="Amara Yoga Studio — Find your quiet center" width="100%">
+</p>
+
 # Amara Yoga Studio
 
 A single-page marketing site for a boutique yoga studio — slow flow, breathwork, and
@@ -13,7 +17,7 @@ step, no framework, no dependencies.
 | Markup | Static `index.html` |
 | Styles | `styles.css` — CSS custom properties, `clamp()` type scale, container queries via media queries |
 | Behaviour | `script.js` — one IIFE, no libraries |
-| Fonts | Cormorant Garamond + Work Sans (Google Fonts) |
+| Fonts | Cormorant Garamond + Work Sans, self-hosted as latin `woff2` in `fonts/` (no third-party requests) |
 | Hosting | Vercel (static, zero-config) |
 
 ## Interaction design
@@ -28,6 +32,7 @@ pointer type:
 - **Parallax** on the hero orb, glow, and philosophy image (transform-only, rAF-throttled)
 - **Scroll progress** bar, **hide-on-scroll** nav, scroll-spy active links
 - **Cursor spotlight** on the dark testimonial section
+- Per-class **line-art icons** that invert on hover
 - Running **marquee**, animated grain overlay, outlined footer wordmark
 
 ## Local development
@@ -56,6 +61,8 @@ After the first deploy, if the domain differs from
 index.html          markup + head metadata (OG, Twitter, JSON-LD)
 styles.css          all styles
 script.js           all behaviour
+fonts/              self-hosted woff2 (latin subset)
+docs/hero.png       README hero screenshot
 favicon.svg         inline leaf mark
 og.png              1200×630 social share image
 404.html            styled not-found page

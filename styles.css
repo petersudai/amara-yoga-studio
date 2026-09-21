@@ -1,3 +1,66 @@
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/cormorant-garamond-italic-0.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/cormorant-garamond-italic-0.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/cormorant-garamond-italic-0.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/cormorant-garamond-normal-1.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/cormorant-garamond-normal-1.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('fonts/work-sans-normal-2.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/work-sans-normal-2.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/work-sans-normal-2.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/work-sans-normal-2.woff2') format('woff2');
+}
 /* ============================================
    TOKENS
 ============================================ */
@@ -174,14 +237,16 @@ p { margin: 0; }
   background: var(--green-deep);
   border-color: var(--green-deep);
 }
-.cursor.is-grow ~ .cursor-dot { opacity: 0; }
+.cursor.is-grow ~ .cursor-dot,
+.cursor.is-drag ~ .cursor-dot { opacity: 0; }
 .cursor.is-drag {
   width: 96px;
   height: 96px;
-  background: var(--green-deep);
+  background: var(--cream-light);
   border-color: var(--green-deep);
+  box-shadow: 0 10px 30px -12px rgba(13,83,14,.45);
 }
-.cursor.is-drag .cursor-label { opacity: 1; }
+.cursor.is-drag .cursor-label { opacity: 1; color: var(--green-deep); }
 .cursor.is-hidden, .cursor-dot.is-hidden { opacity: 0; }
 body.cursor-on { cursor: none; }
 body.cursor-on a, body.cursor-on button { cursor: none; }
@@ -816,7 +881,7 @@ body.cursor-on a, body.cursor-on button { cursor: none; }
 .class-card h3 {
   font-size: 30px;
   font-style: italic;
-  margin-top: 60px;
+  margin-top: 0;
   transition: color .5s ease;
 }
 .class-card p {
@@ -834,6 +899,14 @@ body.cursor-on a, body.cursor-on button { cursor: none; }
   color: var(--green-mid);
   transition: color .5s ease;
 }
+.class-card .class-icon {
+  width: clamp(84px, 9vw, 112px);
+  height: auto;
+  color: var(--green-mid);
+  transition: color .5s ease, transform .7s var(--ease-out-expo);
+  align-self: flex-start;
+}
+.class-card:hover .class-icon { color: var(--cream-light); transform: translateY(-6px) scale(1.06); }
 .class-card:hover .num,
 .class-card:hover h3,
 .class-card:hover p,

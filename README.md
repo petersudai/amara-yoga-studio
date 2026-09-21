@@ -26,14 +26,13 @@ Everything below degrades gracefully and is gated on `prefers-reduced-motion` an
 pointer type:
 
 - **Intro loader** with a counter, then a masked line-reveal on the hero headline
-- **Custom cursor** with grow / drag states + **magnetic** buttons (fine pointer only)
-- **Inertia scroll** — wheel-driven lerp on the real window scroll position
+- **Custom cursor** with grow / "Scroll" states + **magnetic** buttons (fine pointer only)
 - **Horizontal pinned gallery** for the class list (falls back to a stacked grid ≤ 820px or with reduced motion)
 - **Parallax** on the hero orb, glow, and philosophy image (transform-only, rAF-throttled)
 - **Scroll progress** bar, **hide-on-scroll** nav, scroll-spy active links
 - **Cursor spotlight** on the dark testimonial section
 - Per-class **line-art icons** that invert on hover
-- Running **marquee**, animated grain overlay, outlined footer wordmark
+- Running **marquee**, grain overlay, outlined footer wordmark
 
 ## Local development
 
